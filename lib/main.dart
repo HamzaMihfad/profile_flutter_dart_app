@@ -35,61 +35,63 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Quicksand',
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  height: 0.5,
-                  width: 180,
-                  margin: EdgeInsets.only(
-                    top: 3,
-                    bottom: 11,
+                SizedBox(
+                  height: 20,
+                  width: 200,
+                  child: Divider(
+                    color: Colors.white,
                   ),
                 ),
-                Container(
+                Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-                  padding: EdgeInsets.symmetric(horizontal: 17, vertical: 7),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
-                        color: Colors.blue,
-                        size: 30,
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Text(
-                        '+212 600 00 00 00',
-                        style: TextStyle(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.phone,
                           color: Colors.blue,
-                          fontSize: 20,
+                          size: 30,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Text(
+                          '+212 600 00 00 00',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                Container(
+                Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-                  padding: EdgeInsets.symmetric(horizontal: 17, vertical: 8),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        color: Colors.blue,
-                        size: 28,
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Text(
-                        'mihfad1hamza@gmail.com',
-                        style: TextStyle(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.email,
                           color: Colors.blue,
-                          fontSize: 20,
+                          size: 27,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Text(
+                          'mihfad1hamza@gmail.com',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
